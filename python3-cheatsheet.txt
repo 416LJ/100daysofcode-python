@@ -1,0 +1,8 @@
+Create a Python Virtual ENV.
+1. CD into Directory
+2. Command: python3 -m venv .nameofenvyouwant
+3. Command: source ./.nameofenvyouwant/bin/activate
+
+
+To use afterward.
+1. Command: source ./.nameofenvyouwant/bin/activate
