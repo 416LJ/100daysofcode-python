@@ -5,4 +5,31 @@ Create a Python Virtual ENV.
 
 
 To use afterward.
-1. Command: source ./.nameofenvyouwant/bin/activate
+1. Command: source ./.nameofenvfolder/bin/activate
+
+- integer division produced float
+- 'is' must equal in value and data type
+- 'none' used to for smallest value
+
+Strings :
+    - Slicing
+        [start:end]- start is inclusive and end is exclusive
+
+    - In operater : returns boolean
+        word = "someword"
+        'n' in word
+        False
+Word:
+    - .lower()
+    - .upper()
+    - .find("string") : find start position of substring given
+    - .replace() : replace all instances
+        newStr = oldStr.replace('old', 'new')
+    - .lstrip() : remove white at beggining
+    - .rstrip() : remove white at end
+    - .strip() : remove whitepsace on both sides
+    - .startswith("string") : return boolean
+
+Reading Files:
+    variable = open("filename.ext")
+    newline : \n
