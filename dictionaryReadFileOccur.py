@@ -10,13 +10,12 @@ for line in fileOpen:
     for word in words:
         wordList[word] = wordList.get(word,0) + 1
 print(wordList)
-
-newList = list()
+biggest = -1
+bigWord = None
 for k,v in wordList.items():
-    newTup = (v,k)
-    newList.append(newTup)
+    if v > biggest:
+        biggest = v
+        bigWord = k
+    print(v,k)
+print("done : ", bigWord, biggest)
 
-newList = sorted(newList, reverse=True)
-
-for v,k in newList:
-    print(k,v)

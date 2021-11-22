@@ -9,9 +9,6 @@ for name in names:
     counts[name] = counts.get(name,0) + 1
 print(counts)
 
-name = input("enter a file name : ")
-fileOpen = open(name)
-count = dict()
 for line in fileOpen:
     words = line.split()
     for word in words:
