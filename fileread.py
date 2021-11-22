@@ -3,7 +3,7 @@ emails = list()
 for line in fileOpen:
     line = line.rstrip()
     words = line.split()
-
+    print(words)
     if (len(words) > 2) and (words[0] == "From"):
         print(words[1])
         emails.append(words[1])
