@@ -1,7 +1,0 @@
-smallest = None
-print("Before:", smallest)
-for itervar in [41, 12, 9, 74, 1, 15]:
-    if smallest is None or itervar < smallest:
-        smallest = itervar
-    print("Loop:", itervar, smallest)
-print("Smallest:", smallest)
