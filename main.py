@@ -1,35 +1,33 @@
-import math
+size = input("Size? S? M? L? ")
+total = 0
 
-print("Welcome to the tip calculator")
-total = float(input("What was the total bill? "))
-people = int(input("How many people to split the bill? "))
-tip = float(input("how much would you like to tip? "))
-cost = ((total * (1 + (tip/100)))/people)
-cost = "{:.2f}".format(cost)
-print(cost)
+topping = input("Pepperoni? Y? N?")
+if topping == "Y" or topping == "y":
+    topping = True
 
+cheese = input("Extra Cheese? Y? N?")
+if cheese == "Y" or cheese == "y":
+    cheese = True
 
-number = input("enter your number : ")
-firstNumber = int(number[0])
-secNumber = int(number[1])
-total = firstNumber + secNumber
-print("the total is " + str(total))
+if size == "S" or size == "s":
+    total = 15
+    if cheese == True:
+        total += 1
+    if topping == True:
+        total += 2
 
-print("BMI Calculator")
-weight = input("enter your weight in kilos : ")
-height = input("enter your height in metres : ")
+if size == "M" or size == "m":
+    total = 20
+    if cheese == True:
+        total += 1
+    if topping == True:
+        total += 3
 
-bmi = (float(weight)/(float(height) ** 2))
-print(int(bmi))
+if size == "L" or size == "l":
+    total = 25
+    if cheese == True:
+        total += 1
+    if topping == True:
+        total += 3
 
-print(f"your score is {int(bmi)}")
-
-print("Your life in weeks")
-age = int(input("how old are you? "))
-timeLeft = 90 -age
-
-days = timeLeft * 365
-weeks = timeLeft * 52
-months = timeLeft * 12
-
-print(f"you have {days} days or {weeks} weeks or {months} months to live")
+print(f"the total is ${round((total*1.13),2)}")
