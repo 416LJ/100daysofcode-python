@@ -81,19 +81,16 @@ nums = [7,5,4,2,5,7,88,5,4,2,4,6,7,8,6,5,4,3,2,5,7,8,6,4]
 #
 # print(shufPasss)
 
-
 def isPrime(num):
-    print(num)
     if num == 1:
         return "less than 1"
     else:
-        for i in range(2,int(math.sqrt(num)+1)):
+        for i in range(2, int(num/2)):
+            if num % i == 0:
+                print(i)
+                return "this is not a prime number"
+        else:
+            return "this is a prime number"
 
-            if (num % i == 0):
-                return "this is not prime"
-            else:
-                return "prime"
-
-
-print(isPrime(17))
+print(isPrime(51))
 
